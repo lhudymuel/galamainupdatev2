@@ -1,0 +1,120 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title><ion-icon class="text" name="arrow-back" routerLink="/folder/:id"></ion-icon>&nbsp;&nbsp;&nbsp;Store</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<ion-card routerLink="/store1">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <div>
+          <img src="data:image/png;base64,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" alt="Image 2" />
+        </div>
+        </ion-col>
+      <ion-col size="8">
+        <ion-card-content>
+          <ion-card-title>7-Eleven</ion-card-title>
+          <p>Mabini Store is located in Poblacion, Mabini, Batangas</p>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<ion-card routerLink="/store2">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <div>
+          <img src="assets/img/alfamart.png" alt="Image 2" />
+        </div>
+        </ion-col>
+      <ion-col size="8">
+        <ion-card-content>
+          <ion-card-title>Alfamart-Anilao</ion-card-title>
+          <p>Mabini Store is located in Anilao, Mabini, Batangas</p>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<ion-card routerLink="/store3">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <div>
+          <img src="assets/img/alfamart.png" alt="Image 2" />
+        </div>
+        </ion-col>
+      <ion-col size="8">
+        <ion-card-content>
+          <ion-card-title>Alfamart-P. Niogan</ion-card-title>
+          <p>Mabini Store is located in P. Niogan, Mabini, Batangas</p>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<ion-card routerLink="/store4">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <div>
+          <img src="assets/img/alfamart.png" alt="Image 2" />
+        </div>
+        </ion-col>
+      <ion-col size="8">
+        <ion-card-content>
+          <ion-card-title>Alfamart-Talaga</ion-card-title>
+          <p>Mabini Store is located in Talaga East, Mabini, Batangas</p>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+   
+</ion-content>
+ <!--Ionfab changes with addition of label-->
+ <ion-fab vertical="bottom" horizontal="end">
+  <ion-fab-button color="dark">
+    <ion-icon name="chevron-up-circle"></ion-icon>
+  </ion-fab-button>
+
+  <ion-fab-list side="top">
+    <ion-fab-button id="loading" routerLink="/restaurant" data-desc="Restaurant in Mabini" color="light">
+      <ion-icon name="restaurant-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-loading trigger="loading" message="Loading..." [duration]="1000" spinner="circles"></ion-loading>
+
+    <ion-fab-button id="loading2" routerLink="/gym" data-desc="Gym in Mabini" color="light">
+      <ion-icon name="barbell-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-loading trigger="loading2" message="Loading..." [duration]="1000" spinner="circles"></ion-loading>
+
+    <ion-fab-button id="loading3" routerLink="/cafe" data-desc="Cafe in Mabini" color="light">
+      <ion-icon name="cafe-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-loading trigger="loading3" message="Loading..." [duration]="1000" spinner="circles"></ion-loading>
+
+    <ion-fab-button id="loading4" routerLink="/store" data-desc="Store in Mabini" color="light">
+      <ion-icon name="cart-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-loading trigger="loading4" message="Loading..." [duration]="2000" spinner="circles"></ion-loading>
+
+    <ion-fab-button id="loading5" routerLink="/pier" data-desc="Mabini Port" color="light">
+      <ion-icon name="boat-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-loading trigger="loading5" message="Loading..." [duration]="1000" spinner="circles"></ion-loading>
+  
+    <ion-fab-button routerLink="/resort" data-desc="Resort in Mabini" color="dark"  color="light">
+      <img class="beach" src="assets/img/beach.png"/>
+    </ion-fab-button>
+
+  </ion-fab-list>
+</ion-fab>
+<!--Ionfab changes with addition of label end-->

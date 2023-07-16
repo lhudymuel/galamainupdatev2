@@ -1,0 +1,171 @@
+ion-content{
+    --background: #fff;
+    
+    #header{
+       
+        #app-bar{
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            ion-icon{
+                font-size: 24px;
+                margin-left: -5px;
+            }
+            #logo{
+                margin-bottom: -80px;
+                width: 150px;
+                height: 150px;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                border-radius: 100px;
+                align-self: center;
+                margin-right: -400px;
+
+                img{
+                    width: 80%;
+                    height: 80%;
+                   margin-top: 15px;
+                }
+            }
+        }
+        h1{
+            font-size: 19px;
+            margin-top: 50px;
+            margin-left: 120px;
+        }
+    }
+
+    .wrapper{
+        position: absolute;
+        top: 2%;
+        left: 4%;
+        right: 4%;
+
+        .form-wrapper{
+            box-shadow: 10px;
+            border-radius: 20px;
+            padding: 15px 10px;
+            background-color: #fff;
+            opacity: 99%;
+
+            .girl{
+                margin-top: -18 px;
+            }
+
+            h3{
+                margin-top: -30px;
+                font-size: 20px; 
+                font-weight: 600;
+                color: black;
+                text-align: center;
+            }
+
+            h2{
+                font-size: 20px; 
+                font-weight: 600;
+                color: black;
+                text-align: center;
+            }
+            p{
+                margin-top: 10px;
+                color: black;
+            }
+            img{
+                height: 200px;
+                width: 200px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                margin-left: 5px;
+            }
+            ion-button{
+                margin-top: -30px;
+            }
+            .btn-lg{
+                margin-top: 10px;
+                --border-color:  #0E7500;
+                --color: #fff;
+                --background: #0E7500;
+            }
+        }
+
+        .line-text{
+            padding: 0 30px;
+            position: relative;
+            height: 20px;
+            margin-top: 30px;
+
+            .lines{
+                height: 1px;
+                background: black;
+                display: block;
+            }
+
+            .text{
+                position: absolute;
+                top: -7px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #fff;
+                padding: 0 16px;
+                font-size: 14px;
+                font-weight: 500;
+                color: black;
+            }
+        }
+
+        .social-wrapper{
+            box-shadow: 12px;
+            border-radius: 20px;
+            background: #fff;
+            margin-top: -10px;
+
+            .socials{
+                display: flex;
+                justify-content: center;
+                padding: 5px;
+
+                ion-button{
+                    margin: 0 5px;
+                    --padding-start: 12px;
+                    --padding-end: 12px;
+
+                    ion-icon{
+                        font-size: 18px;
+                    }
+                }
+
+                .btn-fb{
+                    --background: #567aa3;
+                }
+                .btn-tw{
+                    --background: #48cff5;
+                }
+                .btn-go{
+                    --background: #fd684f;
+                }
+                .btn-ph{
+                    --background: #567aa3;
+                }
+            }
+        }
+    }
+}
+ion-loading .loading {
+    --background: #e3edff;
+    --spinner-color: gray;
+  
+    color: black;
+  }
+  .girl{
+    position: relative;
+    text-align: center;
+    
+}
+.btn-lg{
+    --border-color:  #0E7500;
+    --color: #fff;
+    --background: #0E7500;
+}

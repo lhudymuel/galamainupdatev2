@@ -1,0 +1,101 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title><ion-icon class="text" name="arrow-back" routerLink="/folder/:id"></ion-icon>&nbsp;&nbsp;&nbsp;Port</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<ion-card routerLink="/port1">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+          <div>
+        <img src="https://blueribbondivers.com/wp-content/uploads/2010/07/batangas-puerto-galera-ferry-300x225.jpg" alt="Image 1" />
+         </div>
+      </ion-col>
+      <ion-col size="8">
+        <ion-card-content>
+          <ion-card-title>Anilao Port</ion-card-title>
+          <p>Located in Anilao, Mabini, Batangas.</p>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<ion-card routerLink="/port2">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+          <div>
+        <img src="https://pia.gov.ph/uploads/2021/07/Port_of_Talaga,_Mabini,_Batangas.jpg" alt="Image 2" />
+         </div>
+      </ion-col>
+
+      <ion-col size="8">
+       
+        <ion-card-content>
+          
+
+          <ion-card-title>Port of Talaga</ion-card-title>
+          <p>Located in Talaga, Mabini, Batangas.</p>
+        </ion-card-content>
+      </ion-col>
+
+      <ion-col size="4">
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+      <label for="id-of-input" class="custom-checkbox">
+        <input type="checkbox" id="id-of-input"/>
+        
+        <i class="glyphicon glyphicon-star-empty"></i>
+        <i class="glyphicon glyphicon-star"></i>
+        <span style="position: absolute; top: 25px; font-size: 20px; ">.</span>
+      </label>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-card>
+    
+</ion-content>
+ <!--Ionfab changes with addition of label-->
+ <ion-fab vertical="bottom" horizontal="end">
+  <ion-fab-button color="dark">
+    <ion-icon name="chevron-up-circle"></ion-icon>
+  </ion-fab-button>
+
+  <ion-fab-list side="top">
+    <ion-fab-button id="loading" routerLink="/restaurant" data-desc="Restaurant in Mabini" color="light">
+      <ion-icon name="restaurant-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-loading trigger="loading" message="Loading..." [duration]="1000" spinner="circles"></ion-loading>
+
+    <ion-fab-button id="loading2" routerLink="/gym" data-desc="Gym in Mabini" color="light">
+      <ion-icon name="barbell-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-loading trigger="loading2" message="Loading..." [duration]="1000" spinner="circles"></ion-loading>
+
+    <ion-fab-button id="loading3" routerLink="/cafe" data-desc="Cafe in Mabini" color="light">
+      <ion-icon name="cafe-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-loading trigger="loading3" message="Loading..." [duration]="1000" spinner="circles"></ion-loading>
+
+    <ion-fab-button id="loading4" routerLink="/store" data-desc="Store in Mabini" color="light">
+      <ion-icon name="cart-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-loading trigger="loading4" message="Loading..." [duration]="2000" spinner="circles"></ion-loading>
+
+    <ion-fab-button id="loading5" routerLink="/pier" data-desc="Mabini Port" color="light">
+      <ion-icon name="boat-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-loading trigger="loading5" message="Loading..." [duration]="1000" spinner="circles"></ion-loading>
+  
+    <ion-fab-button routerLink="/resort" data-desc="Resort in Mabini" color="dark"  color="light">
+      <img class="beach" src="assets/img/beach.png"/>
+    </ion-fab-button>
+
+  </ion-fab-list>
+</ion-fab>
+<!--Ionfab changes with addition of label end-->

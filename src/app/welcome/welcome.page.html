@@ -1,0 +1,113 @@
+<ion-content>
+  <!--header start-->
+ 
+ <!--header end-->
+
+ <!--paceholder start-->
+  <div class="wrapper" color-theme="dark">
+ 
+      <ion-card-content>
+        <h2 style="text-align: center;font-size: 34px; font-weight: 1000;">Welcome</h2>
+        <div class="girl">
+          <img style=" height: 250px; width: 250px;"src="assets/img/cha.gif" alt="">
+          </div>
+          <h3 style="text-align: center; font-weight: 600;;">Hi Im Gala! Your Personal Tour Assistant App in Mabini</h3>
+          <p style="font-size: small; text-align: center; padding-bottom: 5px;">You need to go to Store, Gym, or a Coffee, 
+            just tap the button and we'll show you the way. Ready to Start? Click get started button below. </p>
+        <!--button-->
+        <ion-button id="loading-w" routerLink="/home" class="btn-lg" expand="block">Get Started</ion-button>
+        <ion-loading trigger="loading-w" message="Loading..." [duration]="2000" spinner="circles"></ion-loading>
+        <!--button-->
+
+      </ion-card-content>
+    
+    <!--paceholder end-->
+
+    <!--divider start-->
+    <div class="line-text">
+      <span class="lines"></span>
+      <span class="text">Features</span>
+    </div>
+    <!--divider end-->
+
+    <!--social media icon-->
+    <!--//note: all icon is button-->
+    <ion-card class="social-wrapper">
+      <ion-card-content>
+        <div class="socials">
+          <ion-button id="open-modal" expand="block" class="btn-fb">
+            <ion-modal
+            trigger="open-modal"
+            [initialBreakpoint]="0.25"
+            [breakpoints]="[0, 0.25, 0.5, 0.75]"
+            handleBehavior="cycle"
+          >
+            <ng-template>
+              <ion-content class="ion-padding">
+                <div class="ion-margin-top">
+                  <ion-label>Map...............</ion-label>
+                </div>
+              </ion-content>
+            </ng-template>
+          </ion-modal>
+            <ion-icon name="map-outline"></ion-icon>
+          </ion-button>
+
+          <ion-button id="open-modal2" expand="block"  class="btn-tw">
+            <ion-modal
+            trigger="open-modal2"
+            [initialBreakpoint]="0.25"
+            [breakpoints]="[0, 0.25, 0.5, 0.75]"
+            handleBehavior="cycle"
+          >
+            <ng-template>
+              <ion-content class="ion-padding">
+                <div class="ion-margin-top">
+                  <ion-label>Locate...............</ion-label>
+                </div>
+              </ion-content>
+            </ng-template>
+          </ion-modal>
+            <ion-icon name="locate-outline"></ion-icon>
+          </ion-button>
+
+          <ion-button id="open-modal3" expand="block"   class="btn-go">
+            <ion-modal
+            trigger="open-modal3"
+            [initialBreakpoint]="0.25"
+            [breakpoints]="[0, 0.25, 0.5, 0.75]"
+            handleBehavior="cycle"
+          >
+            <ng-template>
+              <ion-content class="ion-padding">
+                <div class="ion-margin-top">
+                  <ion-label>Navigate...............</ion-label>
+                </div>
+              </ion-content>
+            </ng-template>
+          </ion-modal>
+            <ion-icon name="navigate-outline"></ion-icon>
+          </ion-button>
+          <ion-button id="open-modal4" expand="block"  class="btn-ph">
+            <ion-modal
+            trigger="open-modal4"
+            [initialBreakpoint]="0.25"
+            [breakpoints]="[0, 0.25, 0.5, 0.75]"
+            handleBehavior="cycle"
+          >
+            <ng-template>
+              <ion-content class="ion-padding">
+                <div class="ion-margin-top">
+                  <ion-label>Search...............</ion-label>
+                </div>
+              </ion-content>
+            </ng-template>
+          </ion-modal>
+            <ion-icon name="search-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <!--social media icon-->
+</ion-content>

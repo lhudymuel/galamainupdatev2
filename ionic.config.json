@@ -1,0 +1,8 @@
+{
+  "name": "Gala",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

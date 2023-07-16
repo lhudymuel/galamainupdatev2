@@ -1,0 +1,81 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title><ion-icon class="text" name="arrow-back" routerLink="/cafe"></ion-icon>&nbsp;&nbsp;&nbsp;Cafe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <swiper-container (slidechange)="swiperSlideChanged($event)"
+ [loop]="true"
+ [pagination]="true">
+  <swiper-slide><img height="300 px" width="100%" src="assets/img/pcafe1.jpg" alt=""></swiper-slide>
+  <swiper-slide><img height="300 px" width="100%" src="assets/img/pcafe2.jpg" alt=""></swiper-slide>
+  <swiper-slide><img height="300 px" width="100%" src="assets/img/pcafe3.jpg" alt=""></swiper-slide>
+ </swiper-container>
+ <ion-card-header>
+      <ion-card-title>Lola Pastora Cafe</ion-card-title>
+      <ion-card-subtitle>About</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-icon name="home"></ion-icon>094 V. Panopio Dr., P. Niogan, Anilao East, Philippines<br>
+      
+      <ion-icon name="call"></ion-icon>0921 468 3073<br>
+      <ion-icon name="mail"></ion-icon>lolapastoracoffeebeans@gmail.com<br>
+      <br>Basic Info<br>
+      <ion-item>  <ion-icon name="time"></ion-icon>
+        <ion-select label="Open Time" >
+         <ion-select-option> Monday
+          10:00 AM - 10:00 PM</ion-select-option>
+          <ion-select-option> Tuesday
+            11:00 AM - 9:00 PM</ion-select-option>
+            <ion-select-option> Wednesday
+              10:00 AM - 10:00 PM</ion-select-option>
+              <ion-select-option>Thursday
+                11:00 AM - 9:00 PM</ion-select-option>
+                <ion-select-option> Friday
+                  10:00 AM - 10:00 PM
+                  </ion-select-option>
+                  <ion-select-option>Saturday
+                    10:00 AM - 10:00 PM
+                    </ion-select-option>
+                    <ion-select-option> Sunday
+                      10:00 AM - 10:00 PM
+                      </ion-select-option>
+        </ion-select>
+      </ion-item>
+      
+      <ion-icon name="fast-food"></ion-icon>In-store pickup<br>
+    </ion-card-content>
+
+    <ion-button expand="block" (click)="setOpen(true)"><ion-icon name="location-outline"></ion-icon>Locate Now</ion-button>
+  <ion-modal [isOpen]="isModalOpen">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Lola Pastora Cafe</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="setOpen(false)">Close</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content >
+        <ion-card>
+          <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=poblacion mabini batangas&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections Game</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
+  <ion-card-header>
+            <ion-card-title>Location</ion-card-title>
+          
+          </ion-card-header>
+        
+          <ion-card-content>
+            094 V. Panopio Dr., P. Niogan, Anilao East
+          </ion-card-content>
+        </ion-card>
+     </ion-content>
+    </ng-template>
+  </ion-modal>
+  </ion-card>
+<!--<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=poblacion mabini batangas&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections Game</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>-->
+  
+</ion-content>

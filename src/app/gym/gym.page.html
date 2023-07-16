@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title><ion-icon class="text" name="arrow-back" routerLink="/folder/:id"></ion-icon>&nbsp;&nbsp;&nbsp;Gym</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<ion-card routerLink="/gym1">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <div>
+        <img src="https://scontent.fmnl23-1.fna.fbcdn.net/v/t1.6435-9/41428500_305968600203060_6581178709783347200_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGj1dTwCkoJ6lOouK_I1xKJ8cPEE7ZR9d3xw8QTtlH13ZgIRZqrOx8_usnxpgLflFQKRo-nbRh96mo_ghTxbKxy&_nc_ohc=DIUxmoBna9kAX8mHwZZ&_nc_ht=scontent.fmnl23-1.fna&oh=00_AfCiSV-x7wL45xwhiqNuPYHHepd80EQyKRflJ7K2HMbarQ&oe=64D02A24" alt="Image 2" />
+      </div>
+      </ion-col>
+      <ion-col size="8">
+        <ion-card-content>
+          <ion-card-title>Power Hub</ion-card-title>
+          <p>Power Hub is located in Poblacion, Mabini, Batangas.</p>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+</ion-content>
+     <!--Ionfab changes with addition of label-->
+  <ion-fab vertical="bottom" horizontal="end">
+    <ion-fab-button color="dark">
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+      <ion-fab-button id="loading" routerLink="/restaurant" data-desc="Restaurant in Mabini" color="light">
+        <ion-icon name="restaurant-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-loading trigger="loading" message="Loading..." [duration]="1000" spinner="circles"></ion-loading>
+
+      <ion-fab-button id="loading2" routerLink="/gym" data-desc="Gym in Mabini" color="light">
+        <ion-icon name="barbell-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-loading trigger="loading2" message="Loading..." [duration]="1000" spinner="circles"></ion-loading>
+
+      <ion-fab-button id="loading3" routerLink="/cafe" data-desc="Cafe in Mabini" color="light">
+        <ion-icon name="cafe-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-loading trigger="loading3" message="Loading..." [duration]="1000" spinner="circles"></ion-loading>
+
+      <ion-fab-button id="loading4" routerLink="/store" data-desc="Store in Mabini" color="light">
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-loading trigger="loading4" message="Loading..." [duration]="2000" spinner="circles"></ion-loading>
+
+      <ion-fab-button id="loading5" routerLink="/pier" data-desc="Mabini Port" color="light">
+        <ion-icon name="boat-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-loading trigger="loading5" message="Loading..." [duration]="1000" spinner="circles"></ion-loading>
+    
+      <ion-fab-button routerLink="/resort" data-desc="Resort in Mabini" color="dark"  color="light">
+        <img class="beach" src="assets/img/beach.png"/>
+      </ion-fab-button>
+
+    </ion-fab-list>
+  </ion-fab>
+  <!--Ionfab changes with addition of label end-->
+

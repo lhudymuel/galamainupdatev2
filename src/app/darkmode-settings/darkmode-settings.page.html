@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title><ion-icon class="text" name="arrow-back" routerLink="/folder/:id"></ion-icon>&nbsp;&nbsp;&nbsp;Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label>Dark mode</ion-label>
+    <ion-toggle slot="end" (ionChange)='toggleTheme($event)'></ion-toggle>
+  </ion-item>
+
+  
+</ion-content>

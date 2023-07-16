@@ -1,0 +1,119 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title><ion-icon class="text" name="arrow-back" routerLink="/folder/:id"></ion-icon>&nbsp;&nbsp;&nbsp;Cafe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  
+
+<ion-card routerLink="/cafe1">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <div>
+        <img src="https://scontent.fmnl23-1.fna.fbcdn.net/v/t39.30808-6/298254003_101793502645682_264998484781895064_n.jpg?_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHF10VvL1kFClREWo3tp1YVvZaIx6F5WnS9lojHoXladA_s4D4qdcYly_0wDNJRSGsShAbL8L4q_KLQr7hzu6EG&_nc_ohc=QiGEzuv8z6IAX8XlzaQ&_nc_ht=scontent.fmnl23-1.fna&oh=00_AfDMnekUAYmmCHzMcxtwWrNVrtoYjYC7AKykqFrPZnGxgw&oe=64AE473E" alt="Image 2" />
+      </div>
+      </ion-col>
+      <ion-col size="8">
+        <ion-card-content>
+          <ion-card-title>Casa Azul Resort & Cafe Anilao</ion-card-title>
+          <p>Located in San Jose, Mabini, Batangas.</p>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<ion-card routerLink="/cafe2">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <div>
+        <img src="https://scontent.fmnl23-1.fna.fbcdn.net/v/t39.30808-6/274061238_400343401851532_3606223342545156987_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEuxpTDO2SStlmUd2g-fD7VYRlnJMLzlTxhGWckwvOVPLtje5kwpAT1GXWyHoafJHdvL2L8uEBJlQo1Z6488ua9&_nc_ohc=97tSA3j80eMAX8IP7Mw&_nc_ht=scontent.fmnl23-1.fna&oh=00_AfBin0yjF4bTiTiLDWfFfQuHplkeoLwA9uPJIovFrwOWcw&oe=64AE856A" alt="Image 2" />
+      </div>
+      </ion-col>
+      <ion-col size="8">
+        <ion-card-content>
+          <ion-card-title>Lola Pastora Cafe</ion-card-title>
+          <p>Located in Mabini, Batangas.</p>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<ion-card routerLink="/cafe3">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <div>
+        <img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t39.30808-6/241504726_103188698776619_8573490634677020338_n.jpg?_nc_cat=105&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHYugCds_hHgpFYDZqW_sppcr1iQ26j9AByvWJDbqP0AJ33QvIRMkxw7QUg9xk1HMXaJTmhlZ0Kr6aecvgmeewr&_nc_ohc=EyeB5yQpJTIAX_kEwkJ&_nc_ht=scontent.fmnl17-4.fna&oh=00_AfBz6YgytoDPXngTA-DH-RdN7OpekhcjEXS0ZnysPyatkA&oe=64B177FA" alt="Image 2" />
+      </div>
+      </ion-col>
+      <ion-col size="8">
+        <ion-card-content>
+          <ion-card-title>Khai Cafe</ion-card-title>
+          <p>Located in Poblacion, Mabini, Batangas</p>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<ion-card routerLink="/cafe4">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <div>
+        <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/300376678_401012342141434_3820426964239136387_n.jpg?_nc_cat=108&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFC4K2f7QD8d2JztGoVTumkkQZj1cyWrW6RBmPVzJatbqDJaRGO9vtFJcsjnj_0R4MlKX-xgp-x2gnIPj8nlaop&_nc_ohc=10vTxLGeY24AX_efOwf&_nc_ht=scontent.fmnl17-1.fna&oh=00_AfCfhWVSapOFqEgiZWdZJXcl2mI964eujH29okqsUD4BzQ&oe=64B0A3C9" alt="Image 2" />
+      </div>
+      </ion-col>
+      <ion-col size="8">
+        <ion-card-content>
+          <ion-card-title>21 Street Mart Convenient Cafe</ion-card-title>
+          <p>Located in Mabini, Batangas.</p>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+</ion-content>
+ <!--Ionfab changes with addition of label-->
+ <ion-fab vertical="bottom" horizontal="end">
+  <ion-fab-button color="dark">
+    <ion-icon name="chevron-up-circle"></ion-icon>
+  </ion-fab-button>
+
+  <ion-fab-list side="top">
+    <ion-fab-button id="loading" routerLink="/restaurant" data-desc="Restaurant in Mabini" color="light">
+      <ion-icon name="restaurant-outline"></ion-icon>
+    </ion-fab-button>
+   
+    <ion-fab-button id="loading2" routerLink="/gym" data-desc="Gym in Mabini" color="light">
+      <ion-icon name="barbell-outline"></ion-icon>
+    </ion-fab-button>
+   
+    <ion-fab-button id="loading3" routerLink="/cafe" data-desc="Cafe in Mabini" color="light">
+      <ion-icon name="cafe-outline"></ion-icon>
+    </ion-fab-button>
+  
+    <ion-fab-button id="loading4" routerLink="/store" data-desc="Store in Mabini" color="light">
+      <ion-icon name="cart-outline"></ion-icon>
+    </ion-fab-button>
+   
+    <ion-fab-button id="loading5" routerLink="/pier" data-desc="Mabini Port" color="light">
+      <ion-icon name="boat-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-button routerLink="/resort" data-desc="Resort in Mabini"  color="light">
+      <img class="beach" src="assets/img/beach.png"/>
+    </ion-fab-button>
+
+  </ion-fab-list>
+</ion-fab>
+<!--Ionfab changes with addition of label end-->
+
+  
