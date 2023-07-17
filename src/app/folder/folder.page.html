@@ -52,15 +52,21 @@
   </ion-fab-button>
 
  <!--Camera-->
- <ion-fab-list side="start">
-  <img [src]="getPhoto()" style="width: 400px;"/>
-    <div class="camera" >
-      <ion-fab-button color="dark" (click)="takePicture()">
-        <ion-icon name="camera" ></ion-icon>
+  <ion-fab-list side="start">
+   <img [src]="getPhoto()" style="width: 400px;"/>
+   <div class="camera" >
+       <ion-fab-button color="dark" (click)="takePicture()">
+       <ion-icon name="camera" ></ion-icon>
+      </ion-fab-button>
+       </div>
+  
+      <div class="images" >
+          <ion-fab-button color="dark">
+         <ion-icon name="images-outline"></ion-icon>
       </ion-fab-button>
     </div>
-</ion-fab-list>
-<!--Camera End-->
+  </ion-fab-list>
+  <!--Camera End-->
 
   <ion-fab-list side="top">
     <ion-fab-button id="loading" routerLink="/restaurant" data-desc="Restaurant in Mabini" color="light">
@@ -87,9 +93,7 @@
       <ion-icon name="fish-outline"></ion-icon>
     </ion-fab-button>
 
-    <ion-fab-button routerLink="/cam" data-desc="cam" color="light">
-      <ion-icon name="fish-outline"></ion-icon>
-    </ion-fab-button>
+   
 
 
 

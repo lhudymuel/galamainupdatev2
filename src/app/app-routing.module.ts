@@ -151,6 +151,15 @@ const routes: Routes = [
     path: 'cam',
     loadChildren: () => import('./cam/cam.module').then( m => m.CamPageModule)
   },
+  {
+    path: 'restaurant2',
+    loadChildren: () => import('./content/restaurant2/restaurant2.module').then( m => m.Restaurant2PageModule)
+  },
+  {
+    path: 'restaurant3',
+    loadChildren: () => import('./content/restaurant3/restaurant3.module').then( m => m.Restaurant3PageModule)
+  },
+  
  
  
 ];
